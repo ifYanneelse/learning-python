@@ -1,0 +1,21 @@
+import requests
+
+resposta = requests.get('https://samlinger.natmus.dk/objectbrowse?media=image,rotation')
+
+print('_________________________________')
+print('Status code: ', resposta.status_code)
+print('_________________________________\n')
+
+print('CABEÇALHO')
+print(resposta.headers)
+print('_________________________________\n')
+
+print('CONTEÚDO')
+print(resposta.content)
+print('_________________________________\n')
+
+print('_________________________________FIM\n')
+
+
+
+
